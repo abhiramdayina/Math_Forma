@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mathforma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Combinations"></activity>
+        <activity android:name=".Permutations" />
+        <activity android:name=".Exponent" />
+        <activity android:name=".QuadraticEquation" />
+        <activity android:name=".Ambmcs" />
+        <activity android:name=".Apbpcs" />
+        <activity android:name=".Acmbc" />
+        <activity android:name=".Acpbc" />
+        <activity android:name=".Asmbs" />
+        <activity android:name=".Aspbs" />
+        <activity android:name=".Ambc" />
+        <activity android:name=".Apbc" />
+        <activity android:name=".Ambs" />
+        <activity android:name=".Apbs" />
+        <activity android:name=".Algebra" />
+        <activity android:name=".Cone" />
+        <activity android:name=".Cylinder" />
+        <activity android:name=".Hemisphere" />
+        <activity android:name=".Sphere" />
+        <activity android:name=".Cuboid" />
+        <activity android:name=".Cube" />
+        <activity android:name=".Trapezium" />
+        <activity android:name=".Geometry3D" />
+        <activity android:name=".Rhombuss" />
+        <activity android:name=".Right" />
+        <activity android:name=".Equilateral" />
+        <activity android:name=".Isosceles" />
+        <activity android:name=".Scalene" />
+        <activity android:name=".Circle" />
+        <activity android:name=".Parallel" />
+        <activity android:name=".Square" />
+        <activity android:name=".Recta" />
+        <activity android:name=".Geometry2D" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

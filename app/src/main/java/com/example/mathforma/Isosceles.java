@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Isosceles extends AppCompatActivity {
-    private TextView tvside;
-    private TextView tvbase;
-    private TextView tvheight;
     private EditText etside;
     private EditText etbase;
     private EditText etheight;
@@ -23,13 +20,10 @@ public class Isosceles extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isosceles);
-        tvside = (TextView) findViewById(R.id.tvside);
-        tvbase = (TextView) findViewById(R.id.tvbase);
-        tvheight = (TextView) findViewById(R.id.tvheight);
         etside = (EditText) findViewById(R.id.etside);
         etbase= (EditText) findViewById(R.id.etbase);
         etheight = (EditText) findViewById(R.id.etheight);
-        btnCalc = (Button) findViewById(R.id.btnClac);
+        btnCalc = (Button) findViewById(R.id.btnCalc);
         tvarea = (TextView) findViewById(R.id.tvarea);
         tvperimeter = (TextView) findViewById(R.id.tvperimeter);
 

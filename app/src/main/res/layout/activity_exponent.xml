@@ -1,74 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e6e6fa"
+    android:background="@drawable/gradient_drawable2"
     tools:context=".Exponent">
 
     <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="x^y"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        android:textColor="#7300e6"
+        android:textSize="22dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
 
-    <EditText
-        android:id="@+id/etx"
+    <LinearLayout
+        android:id="@+id/name2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="50dp">
+
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/etx"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:background="#ccd4ff"
+            android:gravity="center"
+            android:hint="Enter 'x' value"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/name3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/name2"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/ety"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:background="#ccd4ff"
+            android:gravity="center"
+            android:hint="Enter 'y' value"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnlay"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter 'x' value"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.119" />
+        android:layout_height="50dp"
+        android:layout_below="@+id/name3"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true">
 
-    <EditText
-        android:id="@+id/ety"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter 'y' value"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etx"
-        app:layout_constraintVertical_bias="0.021" />
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cornerbtn"
+            android:text="Calculate"/>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ety"
-        app:layout_constraintVertical_bias="0.128" />
-
-    <TextView
-        android:id="@+id/tvans"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="x^y : "
-        android:textSize="25dp"
-        android:textColor="#0000ff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalc"
-        app:layout_constraintVertical_bias="0.236" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/name4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/btnlay"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tvans"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="x^y  : "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+</RelativeLayout>

@@ -11,8 +11,6 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class Right extends AppCompatActivity {
-    private TextView tvside;
-    private TextView tvbase;
     private EditText etside;
     private EditText etbase;
     private Button btnCalc;
@@ -24,8 +22,6 @@ public class Right extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right);
 
-        tvside = (TextView) findViewById(R.id.tvside);
-        tvbase = (TextView) findViewById(R.id.tvbase);
         btnCalc = (Button) findViewById(R.id.btnCalc);
         etside = (EditText) findViewById(R.id.etside);
         etbase = (EditText) findViewById(R.id.etbase);

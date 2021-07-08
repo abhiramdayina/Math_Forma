@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 public class Circle extends AppCompatActivity {
 
-    private TextView tvradius;
     private EditText etradius;
     private Button btnCalC;
     private TextView tvarea;
@@ -18,7 +17,7 @@ public class Circle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle);
-        tvradius = (TextView) findViewById(R.id.tvradius);
+
         etradius = (EditText) findViewById(R.id.etradius);
         btnCalC = (Button) findViewById(R.id.btnCalC);
         tvarea = (TextView) findViewById(R.id.tvarea);
@@ -31,7 +30,7 @@ public class Circle extends AppCompatActivity {
                 double area = 3.14159265*number*number;
                 double perimeter = 2*3.14159265*number;
                 tvarea.setText("Area : "+ String.valueOf(area));
-                tvperimeter.setText("Perimeter " + String.valueOf(perimeter));
+                tvperimeter.setText("Perimeter : " + String.valueOf(perimeter));
             }
         });
     }

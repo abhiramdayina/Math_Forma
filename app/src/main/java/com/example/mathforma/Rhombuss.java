@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Rhombuss extends AppCompatActivity {
-    private TextView tvside;
-    private TextView tvdiagonal1;
-    private TextView tvdiagonal2;
     private EditText etside;
     private EditText etdiagonal1;
     private EditText etdiagonal2;
@@ -24,9 +21,7 @@ public class Rhombuss extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rhombuss);
 
-        tvside = (TextView) findViewById(R.id.tvside);
-        tvdiagonal1 = (TextView) findViewById(R.id.tvdiagonal1);
-        tvdiagonal2 = (TextView) findViewById(R.id.tvdiagonal2);
+
         etside= (EditText) findViewById(R.id.etside);
         etdiagonal1 = (EditText) findViewById(R.id.etdiagonal1);
         etdiagonal2 = (EditText) findViewById(R.id.etdiagonal2);

@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Apbpcs extends AppCompatActivity {
-    private TextView tva;
-    private TextView tvb;
-    private TextView tvc;
     private Button btnCalc;
     private EditText eta;
     private EditText etb;
@@ -22,9 +19,6 @@ public class Apbpcs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apbpcs);
-        tva = (TextView) findViewById(R.id.tva);
-        tvb = (TextView) findViewById(R.id.tvb);
-        tvc = (TextView) findViewById(R.id.tvc);
         eta = (EditText) findViewById(R.id.eta);
         etb = (EditText) findViewById(R.id.etb);
         etc = (EditText) findViewById(R.id.etc);

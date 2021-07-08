@@ -9,11 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Trapezium extends AppCompatActivity {
-    private TextView tvbase1;
-    private TextView tvbase2;
-    private TextView tvside1;
-    private TextView tvside2;
-    private TextView tvheight;
     private EditText etbase1;
     private EditText etbase2;
     private EditText etside1;
@@ -27,11 +22,6 @@ public class Trapezium extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trapezium);
-        tvbase1 = (TextView) findViewById(R.id.tvbase1);
-        tvbase2 = (TextView) findViewById(R.id.tvbase2);
-        tvside1 = (TextView) findViewById(R.id.tvside1);
-        tvside2 = (TextView) findViewById(R.id.tvside2);
-        tvheight = (TextView) findViewById(R.id.tvheight);
         etbase1 = (EditText) findViewById(R.id.etbase1);
         etbase2 = (EditText) findViewById(R.id.etbase2);
         etside1 = (EditText) findViewById(R.id.etside1);

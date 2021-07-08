@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Equilateral extends AppCompatActivity {
-    private TextView tvside;
     private EditText etside;
     private Button btnCalc;
     private TextView tvarea;
@@ -20,7 +19,6 @@ public class Equilateral extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equilateral);
 
-        tvside = (TextView) findViewById(R.id.tvside);
         etside = (EditText) findViewById(R.id.etside);
         btnCalc = (Button) findViewById(R.id.btnCalc);
         tvarea = (TextView)findViewById(R.id.tvarea);

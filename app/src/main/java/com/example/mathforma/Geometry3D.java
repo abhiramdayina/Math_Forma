@@ -1,6 +1,7 @@
 package com.example.mathforma;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,48 +11,72 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Geometry3D extends AppCompatActivity {
-    String[] values =new String[]{"Cube","Cuboid","Sphere","Hemisphere","Cylinder","Cone"};
+    private CardView cube,cuboid,sphere,hemisphere,cylinder,cone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geometry3_d);
-        ListView listView = (ListView) findViewById(R.id.listview);
+        setupUIViews();
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String >(this, android.R.layout.simple_list_item_1,values);
-        listView.setAdapter(adapter1);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        cube.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position==0){
-                    Intent intent1 = new Intent(view.getContext(), Cube.class);
-                    startActivityForResult(intent1,0);
-                }
-                if (position==1){
-                    Intent intent1 = new Intent(view.getContext(), Cuboid.class);
-                    startActivityForResult(intent1,1);
-                }
-                if (position==2){
-                    Intent intent1 = new Intent(view.getContext(), Sphere.class);
-                    startActivityForResult(intent1,2);
-                }
-                if (position==3){
-                    Intent intent1 = new Intent(view.getContext(), Hemisphere.class);
-                    startActivityForResult(intent1,3);
-                }
-                if (position==4){
-                    Intent intent1 = new Intent(view.getContext(), Cylinder.class);
-                    startActivityForResult(intent1,4);
-                }
-                if (position==5){
-                    Intent intent1 = new Intent(view.getContext(), Cone.class);
-                    startActivityForResult(intent1,5);
-                }
-
-
-
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Cube.class);
+                startActivity(i);
             }
         });
+
+        cuboid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Cuboid.class);
+                startActivity(i);
+            }
+        });
+
+        sphere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Sphere.class);
+                startActivity(i);
+            }
+        });
+
+        hemisphere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Hemisphere.class);
+                startActivity(i);
+            }
+        });
+
+        cylinder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Cylinder.class);
+                startActivity(i);
+            }
+        });
+
+        cone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Geometry3D.this,Cone.class);
+                startActivity(i);
+            }
+        });
+
+
+    }
+    private void setupUIViews(){
+        cube = findViewById(R.id.cube);
+        cuboid = findViewById(R.id.cuboid);
+        sphere = findViewById(R.id.sphere);
+        hemisphere = findViewById(R.id.hemisphere);
+        cylinder = findViewById(R.id.cylinder);
+        cone = findViewById(R.id.cone);
+
     }
 }
 

@@ -13,7 +13,6 @@ import org.w3c.dom.Text;
 import static java.lang.StrictMath.PI;
 
 public class Sphere extends AppCompatActivity {
-    private TextView tvradius;
     private EditText etradius;
     private Button btnCalc;
     private TextView tvvol;
@@ -24,7 +23,6 @@ public class Sphere extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sphere);
-        tvradius = (TextView) findViewById(R.id.tvradius);
         etradius = (EditText) findViewById(R.id.etradius);
         btnCalc = (Button) findViewById(R.id.btnCalc);
         tvvol = (TextView) findViewById(R.id.tvvol);

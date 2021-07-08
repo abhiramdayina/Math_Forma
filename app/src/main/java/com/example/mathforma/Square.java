@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Square extends AppCompatActivity {
-    private TextView tvlength;
     private EditText etlength;
     private Button btncalc;
     private TextView tvarea;
@@ -21,7 +20,6 @@ public class Square extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_square);
 
-        tvlength = (TextView) findViewById(R.id.tvlength);
         tvarea = (TextView) findViewById(R.id.tvarea);
         tvperimeter = (TextView) findViewById(R.id.tvperimeter);
         tvdiagonal = (TextView) findViewById(R.id.tvdiagonal);

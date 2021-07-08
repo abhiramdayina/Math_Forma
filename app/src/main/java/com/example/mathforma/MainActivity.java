@@ -1,6 +1,7 @@
 package com.example.mathforma;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,49 +11,72 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    String[] values =new String[]{"2D Shapes","3D Shapes","Algebra","Quadratic Equations","Exponents","Permutations","Combinations"};
+    private CardView shape2d,shape3d,algebra,quadraticequ,exponents,permutation,combination;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ListView listView = (ListView) findViewById(R.id.listview);
+        setupUIViews();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String >(this,android.R.layout.simple_list_item_1,values);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        shape2d.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position==0){
-                    Intent intent = new Intent(view.getContext(),Geometry2D.class);
-                    startActivityForResult(intent,0);
-                }
-                if (position==1){
-                    Intent intent = new Intent(view.getContext(),Geometry3D.class);
-                    startActivityForResult(intent,1);
-                }
-                if (position==2){
-                    Intent intent = new Intent(view.getContext(),Algebra.class);
-                    startActivityForResult(intent,2);
-                }
-                if (position==3){
-                    Intent intent = new Intent(view.getContext(),QuadraticEquation.class);
-                    startActivityForResult(intent,3);
-                }
-                if (position==4){
-                    Intent intent = new Intent(view.getContext(),Exponent.class);
-                    startActivityForResult(intent,4);
-                }
-                if (position==5){
-                    Intent intent = new Intent(view.getContext(),Permutations.class);
-                    startActivityForResult(intent,5);
-                }
-                if (position==6){
-                    Intent intent = new Intent(view.getContext(),Combinations.class);
-                    startActivityForResult(intent,6);
-                }
-
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Geometry2D.class);
+                startActivity(i);
             }
         });
+        shape3d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Geometry3D.class);
+                startActivity(i);
+            }
+        });
+        algebra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Algebra.class);
+                startActivity(i);
+            }
+        });
+        quadraticequ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,QuadraticEquation.class);
+                startActivity(i);
+            }
+        });
+        exponents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Exponent.class);
+                startActivity(i);
+            }
+        });
+        permutation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Permutations.class);
+                startActivity(i);
+            }
+        });
+        combination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Combinations.class);
+                startActivity(i);
+            }
+        });
+
+    }
+    private void setupUIViews() {
+        shape2d = findViewById(R.id.shape2d);
+        shape3d = findViewById(R.id.shape3d);
+        algebra = findViewById(R.id.algebra);
+        quadraticequ = findViewById(R.id.quadraticequ);
+        exponents = findViewById(R.id.exponents);
+        permutation = findViewById(R.id.permutation);
+        combination = findViewById(R.id.combination);
     }
 }

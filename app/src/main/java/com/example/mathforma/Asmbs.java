@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Asmbs extends AppCompatActivity {
-    private TextView tva;
-    private TextView tvb;
     private Button btnCalc;
     private EditText eta;
     private EditText etb;
@@ -20,9 +18,6 @@ public class Asmbs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asmbs);
-
-        tva = (TextView) findViewById(R.id.tva);
-        tvb = (TextView) findViewById(R.id.tvb);
         eta = (EditText) findViewById(R.id.eta);
         etb = (EditText) findViewById(R.id.etb);
         btnCalc = (Button) findViewById(R.id.btnCalc);

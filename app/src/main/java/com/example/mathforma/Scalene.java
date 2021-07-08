@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Scalene extends AppCompatActivity {
-    private TextView tvside1;
-    private TextView tvside2;
-    private TextView tvside3;
     private EditText etside1;
     private EditText etside2;
     private EditText etside3;
@@ -24,9 +21,7 @@ public class Scalene extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scalene);
 
-        tvside1 = (TextView) findViewById(R.id.tvside1);
-        tvside2 = (TextView) findViewById(R.id.tvside2);
-        tvside3 = (TextView) findViewById(R.id.tvside3);
+
         etside1 = (EditText) findViewById(R.id.etside1);
         etside2 = (EditText) findViewById(R.id.etside2);
         etside3 = (EditText) findViewById(R.id.etside3);

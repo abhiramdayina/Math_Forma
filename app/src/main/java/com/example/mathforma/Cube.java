@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Cube extends AppCompatActivity {
-    private TextView tvside;
     private EditText etside;
     private Button btnCalc;
     private TextView tvvol;
@@ -20,7 +19,6 @@ public class Cube extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cube);
 
-        tvside = (TextView) findViewById(R.id.tvside);
         etside = (EditText) findViewById(R.id.etside);
         btnCalc = (Button) findViewById(R.id.btnCalc);
         tvvol = (TextView) findViewById(R.id.tvvol);

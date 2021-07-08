@@ -9,9 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Parallel extends AppCompatActivity {
-    private TextView tvlength;
-    private TextView tvbreadth;
-    private TextView tvheight;
+
     private EditText etlength;
     private EditText etbreadth;
     private EditText etheight;
@@ -24,9 +22,6 @@ public class Parallel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parallel);
 
-        tvlength = (TextView) findViewById(R.id.tvlength);
-        tvbreadth = (TextView) findViewById(R.id.tvbreadth);
-        tvheight = (TextView) findViewById(R.id.tvheight);
         etlength = (EditText) findViewById(R.id.etlength);
         etbreadth = (EditText) findViewById(R.id.etbreadth);
         etheight = (EditText) findViewById(R.id.etheight);

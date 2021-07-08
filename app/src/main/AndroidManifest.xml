@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Combinations"></activity>
+        <activity android:name=".Combinations" />
         <activity android:name=".Permutations" />
         <activity android:name=".Exponent" />
         <activity android:name=".QuadraticEquation" />

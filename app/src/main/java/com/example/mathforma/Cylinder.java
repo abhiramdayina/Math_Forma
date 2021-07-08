@@ -12,8 +12,6 @@ import org.w3c.dom.Text;
 
 public class Cylinder extends AppCompatActivity {
     private static final double PI = 3.14159265;
-    private TextView tvradius;
-    private TextView tvheight;
     private EditText etradius;
     private EditText etheight;
     private Button btnCalc;
@@ -26,8 +24,6 @@ public class Cylinder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cylinder);
-        tvradius = (TextView) findViewById(R.id.tvradius);
-        tvheight = (TextView) findViewById(R.id.tvheight);
         etradius = (EditText) findViewById(R.id.etradius);
         etheight = (EditText) findViewById(R.id.etheight);
         btnCalc = (Button) findViewById(R.id.btnCalc);

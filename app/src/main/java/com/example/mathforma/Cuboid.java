@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Cuboid extends AppCompatActivity {
-    private TextView tvlength;
-    private TextView tvbreadth;
-    private TextView tvwidth;
     private EditText etlength;
     private EditText etbreadth;
     private EditText etwidth;
@@ -23,9 +20,6 @@ public class Cuboid extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuboid);
-        tvlength = (TextView)findViewById(R.id.tvlength);
-        tvbreadth = (TextView) findViewById(R.id.tvbreadth);
-        tvwidth = (TextView) findViewById(R.id.tvwidth);
         etlength = (EditText) findViewById(R.id.etlength);
         etbreadth = (EditText) findViewById(R.id.etbreadth);
         etwidth = (EditText) findViewById(R.id.etwidth);

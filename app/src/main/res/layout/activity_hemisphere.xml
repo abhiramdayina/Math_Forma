@@ -1,125 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e6e6fa"
+    android:background="@drawable/gradient_drawable2"
     tools:context=".Hemisphere">
 
     <TextView
-        android:id="@+id/tvradius"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Radius"
-        android:textColor="#1e90ff"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
-
-    <EditText
-        android:id="@+id/etradius"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
-
-    <Button
-        android:id="@+id/btnCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
-    <TextView
-        android:id="@+id/tvvol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Volume :"
-        android:textColor="#0000ff"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <TextView
-        android:id="@+id/tvcsa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CSA :"
-        android:textColor="#0000ff"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
-
-    <TextView
-        android:id="@+id/tvtsa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TSA :"
-        android:textColor="#0000ff"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(Curved Surface Area)"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(Total Surface Area)"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HEMISPHERE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="#7300e6"
+        android:textSize="22dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/name2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="RADIUS"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#7300E6" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/etradius"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:background="#ccd4ff"
+            android:hint="Enter radius"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name2"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cornerbtn"
+            android:text="Calculate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name5"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tvvol"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="Volume  : "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name6"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tvcsa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="CSA  : "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name8"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name7">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="(Lateral Surface Area)"
+            android:textSize="15dp"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name8"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tvtsa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="TSA  : "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name10"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/name9">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="35dp"
+            android:text="(Total Surface Area)"
+            android:textSize="15dp"
+            android:textColor="#ccd4ff" />
+    </LinearLayout>
+
+
+</RelativeLayout>

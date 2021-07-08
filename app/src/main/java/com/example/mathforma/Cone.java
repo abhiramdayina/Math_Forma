@@ -11,9 +11,6 @@ import android.widget.TextView;
 import static java.lang.Math.PI;
 
 public class Cone extends AppCompatActivity {
-    private TextView tvradius;
-    private TextView tvheight;
-    private TextView tvlength;
     private EditText etradius;
     private EditText etheight;
     private EditText etlength;
@@ -26,9 +23,6 @@ public class Cone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cone);
-        tvradius = (TextView) findViewById(R.id.tvradius);
-        tvheight = (TextView) findViewById(R.id.tvheight);
-        tvlength = (TextView) findViewById(R.id.tvlength);
         etradius = (EditText) findViewById(R.id.etradius);
         etheight = (EditText) findViewById(R.id.etheight);
         etlength = (EditText) findViewById(R.id.etlength);
